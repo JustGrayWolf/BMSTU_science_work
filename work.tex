@@ -1,0 +1,84 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{indentfirst}
+\usepackage{pdfpages}
+\usepackage{titlesec}
+\usepackage{listings}
+\usepackage{amsmath}
+
+% Вставка картинки
+\usepackage{graphicx}
+\graphicspath{{schemes/}}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+
+\usepackage[14pt]{extsizes}
+
+\newcommand{\hsp}{\hspace{20pt}}
+\titleformat{\chapter}[hang]{\large\bfseries}{\thechapter{. }}{0pt}{\large\bfseries}
+\titlelabel{hlabel-formati}
+\titlespacing{\chapter}{42pt}{-20pt}{12pt}
+\titleformat{\section}[hang]{\large\bfseries}{\thesection{. }}{0pt}{\large\bfseries}
+\titlespacing{\section}{42pt}{12pt}{5pt plus 5pt}
+
+% Отступ абзаца
+\usepackage{indentfirst}
+\setlength{\parindent}{1.5cm}
+
+% Межстрочный интервал
+\usepackage{setspace}
+\onehalfspacing % интервал 1.5
+
+\usepackage[left=3cm, right=1cm, top=2cm, bottom=2cm]{geometry}
+
+\begin{document}
+% Титульник
+%\includepdf[pages=1]{titul.pdf}
+% Оглавление
+\tableofcontents
+
+\newpage
+\chapter*{Введение}
+\addcontentsline{toc}{chapter}{Введение}
+Практически любой вид человеческой деятельности связан с ситуациями, когда име-
+ется несколько возможностей и человек волен из этих возможностей выбрать любую, наибо-
+лее подходящую ему.
+Задачи наилучшего выбора изучает теория принятия решений. С ее помощью можно
+научиться осуществлять выбор более обоснованно, эффективно используя имеющуюся в на-
+личии информацию о предпочтениях. Эта теория помогает избежать принятия заведомо не-
+годных решений и учесть возможные отрицательные последствия непродуманного выбора.
+
+Наиболее обширной задачей многокритериального выбора является задача векторной оптимизации. Применение решений данной задачи может использоватся для экономических, проектных и даже научных задач, в которых нужно достич оптимального соотношения параметров.
+
+
+
+Можно выделить следующие задачи научной работы:
+\begin{itemize}
+    \item Сформулировать задачу векторной оптимизации;
+    \item изучить методы решения задачи;
+    \item выбрать один из методов решения и исследовать его;
+    \item составить заключение по проделанной работе.
+\end{itemize}
+
+\newpage
+\chapter{Аналитическая часть}
+В данном разделе будут сформулированы задачи многокритериального выбора и векторной оптимизации.
+\section{Задача многокритериального выбора}
+\section{Множество Парето}
+\section{Задача векторной оптимизации}
+\section{Способы решения задачи векторной оптимизации}
+\renewcommand\bibname{Список литературы}
+\addcontentsline{toc}{chapter}{Список литературы}
+\makeatletter % список литературы
+\def\@biblabel#1{#1. }
+\makeatother
+\begin{thebibliography}{2}
+	\bibitem{} В. Д. Ногин ПРИНЯТИЕ РЕШЕНИЙ В МНОГОКРИТЕРИАЛЬНОЙ СРЕДЕ: Наука. Гл. ред. физ.-мат. лит. 2002.
+    \bibitem{} А.Г. Коротченко Е.А. Кумагина В.М. Сморякова ВВЕДЕНИЕ В МНОГОКРИТЕРИАЛЬНУЮ ОПТИМИЗАЦИЮ: Гл. ред. Нижегородского государственного университета
+им. Н.И. Лобачевского 2017
+	\bibitem{} Подиновский В.В. Ногин В.Д. Парето-оптимальные решения многокритериальных задач. М.: Наука. Гл. ред. физ.-мат. лит. 1982.
+	\bibitem{} Задачи векторной оптимизации [Электронный ресурс]. Режим доступа: https://poisk-ru.ru/s39497t19.html (дата обращения 10.12.2021)
+	\bibitem{} Лекция. Векторная оптимизация. [Электронный ресурс]. Режим доступа: https://davaiknam.ru/text/lekciya-vektornaya-optimizaciya (дата обращения 12.12.2021)
+\end{thebibliography}
+
+\end{document}
